@@ -1,0 +1,25 @@
+@SpringBootApplication
+	combination of three separate annotations
+		@Configuration - source of bean definitions for the application context
+		@EnableAutoConfiguration - This annotation tells Spring Boot to attempt to
+					automatically configure the spring application based
+					on jar dependencies that are present in class path
+		@ComponentScan - This annotation tells Spring Boot to scan the specified packages
+				for annotated components.
+
+@Service
+	used with classes that provide business functionalities
+	specialization of the @Component Annotation
+
+
+@RestController
+	to mark a class as a request handler. Used to create REST API
+@RequestMapping("/api")
+@GetMapping("/employees")
+@Entity
+	makes a class as entity class
+
+@Table (name="employee")
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name = "first_name")
